@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   heading: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 20,
+    fontFamily: 'Roboto-Medium',
+    fontSize: 30,
+    marginBottom: 30,
   },
   input: {
     width: 343,
@@ -32,14 +32,16 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 10,
     paddingHorizontal: 10,
+    borderRadius: 10,
+    backgroundColor: '#E8E8E8',
   },
   button: {
-    backgroundColor: 'orange',
+    backgroundColor: '#FF6C00',
     width: 343,
     height: 50,
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 5,
+    borderRadius: 100,
   },
   buttonText: {
     color: 'white',
