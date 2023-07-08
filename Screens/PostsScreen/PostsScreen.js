@@ -1,16 +1,17 @@
-import { View, Text, StyleSheet } from "react-native";
-// import LogoutButton from "../../components/LogoutButton";
+import { View, Text, StyleSheet,TouchableOpacity } from "react-native";
 
 const PostsScreen = () => {
-  const handleLogoutButton = () => {
-    console.log("Logout");
+  const handleLogoutButtonPress = () => {
+    console.log("Logout button pressed");
   };
 
   return (
     <View style={styles.container}>
       <View style={styles.headingContainer}>
         <Text style={styles.heading}>Публікації</Text>
-        {/* <LogoutButton onPress={handleLogoutButton}></LogoutButton> */}
+        <TouchableOpacity style={styles.logoutButton} onPress={handleLogoutButtonPress}>
+          <Text style={styles.logoutButtonText}>Logout</Text>    
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -42,6 +43,14 @@ const styles = StyleSheet.create({
     marginLeft:'auto',
     marginRight:'auto',
   },
+  logoutButton:{
+    // width:24,
+    height:24,
+    backgroundColor: "#f8f8f8",
+  },
+  logoutButtonText:{
+    fontSize: 12,
+  }
 });
 
 export default PostsScreen;
